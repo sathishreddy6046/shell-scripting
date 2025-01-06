@@ -1,9 +1,6 @@
 #!/bin/bash
 
-MOVIES=("ssmb29""pokiri""athadu")
-
-echo "first movie : ${MOVIES[0]}"
-
+MOVIES=("ssmb29" "pokiri" "athadu")
 
 echo "first movie : ${MOVIES[0]}"
 
