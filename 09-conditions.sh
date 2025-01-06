@@ -2,7 +2,7 @@
 
 NUMBER=140
 
-140= $NUMBER
+140 = $NUMBER
 
 if [ $NUMBER -gt 100 ]
 then
