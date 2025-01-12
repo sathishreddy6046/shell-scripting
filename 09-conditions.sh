@@ -1,8 +1,8 @@
 #1/bin/bash
 
-NUMBER=140
+NUMBER=$1
 
-140 = $NUMBER
+
 
 if [ $NUMBER -gt 100 ]
 then
