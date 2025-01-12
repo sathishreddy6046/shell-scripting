@@ -6,7 +6,7 @@ if [ $USERID -ne 0 ]
 then
  echo : "error you must have sudo access to execute this script"
 
- exit1
+ exit 1
 
  fi
 
