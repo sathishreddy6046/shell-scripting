@@ -20,8 +20,7 @@ LOG_FILE_NAME="$LOGS_FOLDER/$LOG_FILE-$TIMESTAMP.LOG"
      fi
 
  }
-echo "script started executing at: $TIMESTAMP" &>>$LOG_FILE
-if [ $USERID -ne 0 ]
+echo "script started executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
 then
  echo : "error you must have sudo access to execute this script"
 
@@ -29,12 +28,12 @@ then
 
  fi
 
- dnf list installed mysql &>>$LOG_FILE
+ dnf list installed mysql &>>$LOG_FILE_NAME
 
  if [ $? -ne 0 ]
 
  then
- dnf install mysql -y &>>$LOG_FILE
+ dnf install mysql -y &>>$LOG_FILE_NAME
 
  VALIDATE $! "installing mysql"
 
@@ -43,12 +42,12 @@ then
       fi
 
 
- dnf list installed git &>>$LOG_FILE
+ dnf list installed git &>>$LOG_FILE_NAME
 
   if [ $? -ne 0 ]
   then
 
- dnf install git -y &>>$LOG_FILE
+ dnf install git -y &>>$LOG_FILE_NAME
 
 VALIDATE $! "installing git"
 
