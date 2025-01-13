@@ -61,12 +61,12 @@ else
 #      fi
 #  dnf install git -y
 
-if [ $? -ne 0 ]
-then
-   echo : "installing git is failure"
-   exit 1
+# if [ $? -ne 0 ]
+# then
+#    echo : "installing git is failure"
+#    exit 1
 
-else
-    echo : "installing git is success"
+# else
+#     echo : "installing git is success"
 
-     fi
+#      fi
